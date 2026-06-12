@@ -34,4 +34,32 @@ Daily hospital admissions data with the following characteristics:
 
 ![5](images/5.jpg)![6](images/6.jpg)![7](images/7.jpg)![8](images/8.jpg)![10](images/10.jpg)![11](images/11.jpg)
 
+### 🔹 Decomposition
+- Explored classical additive decomposition for initial visual inspection
+- Applied **STL decomposition** (Seasonal-Trend decomposition using LOESS) directly to the original emergency series
+  - `seasonal = 13`, `trend = 151`, `robust = True`
+  - Compared multiple trend window sizes (91, 151, 201, 365) before selecting 151
+
+**STL Components:**
+ 
+| Component | Role |
+|---|---|
+| **Trend** | Long-run direction of admissions (~15–20/day) |
+| **Seasonal** | Weekly recurring pattern (Monday peak, Sunday low) |
+| **Residual** | Remaining noise passed to ARIMA |
+
+### 🔹 Stationarity Testing
+- Ran Augmented Dickey-Fuller (ADF) test on STL residuals
+- **Result**: ADF = -12.92, p-value ≈ 0.000 → Residuals confirmed stationary ✅
+- No differencing required (d = 0)
+
+### 🔹 ARIMA Modelling
+- Manually identified candidate orders from ACF/PACF plots
+- Used `auto_arima` (pmdarima) to confirm optimal order
+- **Selected model**: `ARIMA(3,0,0)` with no intercept
+- Validated using:
+  - Ljung-Box test (p = 0.90 → white noise confirmed ✅)
+  - Diagnostic plots: standardised residuals, Q-Q plot, correlogram
+
+
 
