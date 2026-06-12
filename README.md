@@ -1,4 +1,5 @@
 # 🏥 Emergency Admissions Forecasting using Time Series Analysis
+![Time](images/Time.png)
 
 ## 🚨 Why Emergency depertement Forcasting is important?
 
@@ -21,3 +22,6 @@ Daily hospital admissions data with the following characteristics:
 - Aggregated data at weekly, monthly, quarterly, and yearly levels
 
 ![1](images/1.jpg)
+![2](images/2.jpg)
+![3](images/3.jpg)
+![4](images/4.jpg)
