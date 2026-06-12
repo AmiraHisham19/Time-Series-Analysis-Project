@@ -6,6 +6,15 @@
 - Unplanned emergency admissions leads to significant stress on hospital resources and staff.
 - Accurate forecasting enables hospitals to **allocate staff, beds, and resources proactively**.
 - Predictive models can flag high-demand periods **before they occur**, supporting operational planning
+
+## 📝 Project Summary
+The analysis follows a classical statistical time series pipeline — STL decomposition combined with ARIMA, Facebook Prophet — rather than deep learning approaches such as RNNs or LSTMs.
+
+This choice was deliberate: the dataset spans roughly 640 daily observations (~21 months). Deep learning models like RNNs and LSTMs typically require thousands of observations to learn temporal patterns reliably and are prone to overfitting on datasets of this size. Classical methods (STL, ARIMA, Prophet) are well-suited to smaller datasets because they:
+
+- Rely on far fewer parameters, reducing overfitting risk
+- Provide interpretable components (trend, weekly seasonality, residuals) that are easier to validate and explain to clinical stakeholders
+- Offer built-in statistical diagnostics (ADF test, Ljung-Box test, ACF/PACF) to formally verify model assumptions
   
 ## 📊 Dataset Overview
 Daily hospital admissions data with the following characteristics:
