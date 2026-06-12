@@ -19,3 +19,5 @@ Daily hospital admissions data with the following characteristics:
 - Grouped admissions by date and type (Emergency vs OPD)
 - Reindexed to a continuous daily date range, filling missing dates with zero
 - Aggregated data at weekly, monthly, quarterly, and yearly levels
+
+![1](images/1.jpg)
