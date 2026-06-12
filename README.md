@@ -32,4 +32,6 @@ Daily hospital admissions data with the following characteristics:
 - Analysed ACF and PACF plots at daily and weekly levels
 - Generated month plots and quarter plots to identify seasonal patterns
 
+![5](images/5.jpg)![6](images/6.jpg)![7](images/7.jpg)![8](images/8.jpg)![10](images/10.jpg)![11](images/11.jpg)
+
 
