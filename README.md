@@ -61,5 +61,8 @@ Daily hospital admissions data with the following characteristics:
   - Ljung-Box test (p = 0.90 → white noise confirmed ✅)
   - Diagnostic plots: standardised residuals, Q-Q plot, correlogram
 
+![12](images/12.jpg)
+![13](images/13.jpg)
+![14](images/14.jpg)
 
 
