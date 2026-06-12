@@ -19,9 +19,17 @@ Daily hospital admissions data with the following characteristics:
 - Parsed and converted admission dates to datetime format
 - Grouped admissions by date and type (Emergency vs OPD)
 - Reindexed to a continuous daily date range, filling missing dates with zero
-- Aggregated data at weekly, monthly, quarterly, and yearly levels
 
 ![1](images/1.jpg)
 ![2](images/2.jpg)
 ![3](images/3.jpg)
 ![4](images/4.jpg)
+
+### 🔹 Exploratory Data Analysis
+- Aggregated data at weekly, monthly, quarterly, and yearly levels
+- Computed rolling mean, rolling standard deviation, and cumulative admissions
+- Calculated month-over-month and quarter-over-quarter percentage changes
+- Analysed ACF and PACF plots at daily and weekly levels
+- Generated month plots and quarter plots to identify seasonal patterns
+
+
